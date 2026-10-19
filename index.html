@@ -23,8 +23,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="assets/style.css?v=8" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css?v=9" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Mono:wght@400&display=swap" rel="stylesheet">
 
     <script type="application/ld+json">
       {
@@ -57,7 +57,7 @@
         <div class="center-body" id="research">
           <h2 class="sr-only">Publications</h2>
 
-          <article class="paper">
+          <article class="paper" id="patch-policy">
             <div class="paper-media">
               <a href="https://patch-policy.github.io/" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
                 <video src="assets/media/patch-policy.mp4" poster="assets/media/patch-policy.jpg" muted loop playsinline preload="none"></video>
@@ -74,7 +74,7 @@
             </p>
           </article>
 
-          <article class="paper">
+          <article class="paper" id="cap-policy">
             <div class="paper-media">
               <a href="https://cap-policy.github.io/" target="_blank" rel="noreferrer" tabindex="-1" aria-hidden="true">
                 <video src="assets/media/cap-policy.mp4" poster="assets/media/cap-policy.jpg" muted loop playsinline preload="none"></video>
@@ -138,9 +138,15 @@
           <a class="hl" href="#contact">Contact</a>
         </nav>
 
-        <figure class="portrait">
-          <img src="assets/portrait.jpg" alt="Bowen Tan" width="696" height="912" />
-        </figure>
+        <div class="left-middle">
+          <figure class="portrait">
+            <img src="assets/portrait.jpg" alt="Bowen Tan" width="696" height="912" />
+          </figure>
+          <ol class="index mono" aria-label="Publications">
+            <li class="row-3"><span>[1]</span><a class="hl underline" href="#patch-policy">Patch Policy</a></li>
+            <li class="row-3"><span>[2]</span><a class="hl" href="#cap-policy">Contact-Anchored Policies</a></li>
+          </ol>
+        </div>
 
         <footer class="foot mono" id="contact">
           <div class="row-3">
@@ -150,9 +156,9 @@
           <div class="row-3">
             <span>[Social]</span>
             <div class="foot-links">
-              <a class="hl underline" href="https://github.com/bowen121" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="hl underline" href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="hl underline" href="https://scholar.google.com/citations?user=etjOJOEAAAAJ" target="_blank" rel="noreferrer">Scholar</a>
+              <a class="hl underline" href="https://github.com/bowen121" target="_blank" rel="noreferrer" aria-label="GH, GitHub">GH</a>
+              <a class="hl underline" href="https://www.linkedin.com/in/bowen-tan-82212b2b9" target="_blank" rel="noreferrer" aria-label="LI, LinkedIn">LI</a>
+              <a class="hl underline" href="https://scholar.google.com/citations?user=etjOJOEAAAAJ" target="_blank" rel="noreferrer" aria-label="GS, Google Scholar">GS</a>
             </div>
           </div>
           <div class="row-3">
