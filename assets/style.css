@@ -132,7 +132,15 @@ button {
   }
 
   .col-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
     padding-bottom: 16px;
+    border-bottom-width: 1px;
+  }
+
+  .col-left .nav {
+    padding-bottom: var(--gap);
     border-bottom-width: 1px;
   }
 
@@ -306,11 +314,7 @@ button {
   font-size: 14px;
 }
 
-@media (max-width: 1023px) {
-  .left-middle {
-    margin: 32px 0;
-  }
-}
+
 
 .foot {
   display: flex;
@@ -545,4 +549,113 @@ button {
   .timeline {
     display: none;
   }
+}
+
+/* About page ---------------------------------------------------------------- */
+
+.center-figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-figure img {
+  width: 100%;
+  height: auto;
+  border-width: 1px;
+}
+
+@media (min-width: 1024px) {
+  .center-figure img {
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.block h2 {
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+/* Contact page --------------------------------------------------------------- */
+
+.paper-media.media-fill {
+  aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 1024px) {
+  .paper-media.media-fill {
+    aspect-ratio: auto;
+    height: 100%;
+  }
+}
+
+.contact-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--gap);
+  margin-top: var(--gap);
+}
+
+.contact-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin: 64px 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .fields {
+    margin: auto 0 24px;
+  }
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 6px 0;
+  font: inherit;
+  font-size: 16px;
+  color: inherit;
+  background: transparent;
+  border-bottom: 1px dashed var(--text);
+  border-radius: 0;
+  outline: none;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  border-bottom-style: solid;
+  background: rgb(14 255 10 / 0.12);
 }
