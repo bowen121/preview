@@ -558,11 +558,6 @@ button {
   justify-content: center;
 }
 
-.center-figure > a {
-  display: block;
-  width: 100%;
-}
-
 .center-figure img {
   width: 100%;
   height: auto;
@@ -590,12 +585,27 @@ button {
 
 /* Contact page --------------------------------------------------------------- */
 
-.paper-media.media-fill {
+/* Logo shown at its own 400px size on a frame of its background colour */
+.center-figure > .logo-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   aspect-ratio: 1 / 1;
+  border-width: 1px;
+  background: rgb(59 57 70);
+}
+
+.center-figure .logo-frame img {
+  width: min(100%, 400px);
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  border-width: 0;
 }
 
 @media (min-width: 1024px) {
-  .paper-media.media-fill {
+  .center-figure > .logo-frame {
     aspect-ratio: auto;
     height: 100%;
   }
