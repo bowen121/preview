@@ -558,6 +558,11 @@ button {
   justify-content: center;
 }
 
+.center-figure > a {
+  display: block;
+  width: 100%;
+}
+
 .center-figure img {
   width: 100%;
   height: auto;
